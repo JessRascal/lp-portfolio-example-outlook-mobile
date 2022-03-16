@@ -9,8 +9,134 @@
     <title>Tailwindcss and Alpine.js Template by JessRascal</title>
   </head>
   <body>
+    <main class="antialiased">
+      <!-- HERO -->
+      <div class="min-h-screen85 md:p-32 bg-outlook-dark">
+        <!-- TODO: change default font (open sans) -->
+        <!-- TODO: add colors for text emphasis  -->
+        <!-- TODO: Outlook logo and heading -->
+        <!-- TODO: just using svg file directly the best way? -->
+
+        <!-- outlook logo -->
+        <div class="text-center md:text-left">
+          <a href="#">
+            <img
+              class="inline-block align-middle h-12 mr-5"
+              src="assets/images/outlook-365-logo-hi-res.svg"
+              alt="Outlook logo"
+            />
+            <p
+              class="inline-block align-middle text-3xl font-light text-light-medium"
+            >
+              Outlook Mobile
+            </p>
+          </a>
+        </div>
+        <!-- TODO: Microsoft logo (md only) -->
+        <section
+          class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4 px-8 py-10 md:px-14 md:py-16 md:bg-outlook-light text-white drop-shadow-lg"
+        >
+          <div class="md:col-span-2 text-center sm:text-left">
+            <h1 class="mb-5 md:mb-2.5 text-3xl md:text-4xl font-bold">
+              Do not disturb...often
+            </h1>
+            <p class="text-xl pb-4 md:pb-0 md:text-2xl">
+              Receive your emails on the go, but stay focused on what matters.
+            </p>
+          </div>
+          <!-- TODO: phone images - offset (md only)? -->
+          <div class="md:hidden">
+            <!-- TODO: srcset? -->
+            <img
+              class="mx-auto"
+              srcset="
+                assets/images/hero-screenshots-mobile-276w.png,
+                assets/images/hero-screenshots-mobile-552w.png  2x,
+                assets/images/hero-screenshots-mobile-828w.png  3x,
+                assets/images/hero-screenshots-mobile-1104w.png 4x
+              "
+              src="assets/images/hero-screenshots-mobile-276w.png"
+              alt="Overlapped screenshots of Outlook Mobile"
+            />
+          </div>
+          <div class="hidden md:block md:row-span-3">
+            <img src="https://via.placeholder.com/220x477" />
+          </div>
+          <div class="hidden md:block md:row-span-3">
+            <img src="https://via.placeholder.com/220x477" />
+          </div>
+          <!-- TODO: ratings -->
+          <!-- TODO: version of ratings to show under app store buttons? -->
+          <div class="hidden md:block text-center">
+            <p>App Store</p>
+            <p>*****</p>
+            <small>4m+ ratings</small>
+          </div>
+          <div class="hidden md:block text-center">
+            <p>Google Play</p>
+            <p>*****</p>
+            <small>7m+ ratings</small>
+          </div>
+          <!-- EMAIL FIELD CTA -->
+          <form class="hidden md:block md:col-span-2">
+            <label for="cta-email-field"
+              >Enter your email address or phone number to get a download
+              link</label
+            >
+            <input type="email" id="cta-email-field" name="cta-email-field" />
+          </form>
+          <!-- DOWNLOAD BUTTONS CTA -->
+          <!-- TODO: flex/grid -->
+          <div class="md:hidden grid text-center">
+            <h2 class="pb-4 text-2xl">Download for <strong>Free</strong></h2>
+            <!-- apple app store -->
+            <div>
+              <a
+                href="https://apps.apple.com/us/app/microsoft-outlook/id951937596?itsct=apps_box_badge&amp;itscg=30200"
+                style="
+                  display: inline-block;
+                  overflow: hidden;
+                  border-radius: 13px;
+                  width: 250px;
+                  height: 60x;
+                "
+                ><img
+                  src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1422489600&h=e8773ffd415111ae02abedfd26877e62"
+                  alt="Download on the App Store"
+                  style="border-radius: 13px; width: 250px; height: 60px"
+              /></a>
+            </div>
+            <div class="mx-auto">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_GB&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                ><img
+                  alt="Get it on Google Play"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  style="height: 95px"
+              /></a>
+            </div>
+            <!-- google play -->
+          </div>
+        </section>
+      </div>
+      <!-- WORKFLOW -->
+      <section></section>
+      <hr />
+      <!-- TESTIMONIALS -->
+      <section></section>
+      <hr />
+      <!-- FEATURES -->
+      <!-- TODO: create custom class for these sections -->
+      <section></section>
+      <hr />
+      <!-- CTA -->
+      <section></section>
+    </main>
+    <!-- FOOTER -->
+    <footer></footer>
+
     <!-- DELETE ME! This is just to prove it's working -->
-    <div class="p-4 container mx-auto flex flex-wrap justify-center">
+    <!-- <div class="p-4 container mx-auto flex flex-wrap justify-center">
       <div
         class="min-w-[430px] min-h-[265px] p-10 m-2 rounded-2xl drop-shadow-md bg-gradient-to-br from-cyan-500 to-blue-300"
       >
@@ -23,7 +149,7 @@
           <br />
           <div x-data="{ open: false }">
             <button
-              class="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded"
+              class="bg-outlook-light hover:bg-outlook-dark text-white font-bold py-2 px-4 rounded"
               @click="open = !open"
             >
               Alpine.js Test
@@ -36,6 +162,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
